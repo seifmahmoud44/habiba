@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 @font-face {
   font-family: main;
   src: url(../public/PlusJakartaSans-VariableFont_wght.ttf);
@@ -110,4 +111,8 @@
 }
 .link:hover::before {
   left: 0;
+=======
+body {
+  background-color: aqua;
+>>>>>>> b6a8872ef0c74e7c7d1fb74e0638715f561d2e13
 }
