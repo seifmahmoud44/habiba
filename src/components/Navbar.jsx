@@ -69,7 +69,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`absolute top-0 ${
+        className={`absolute top-0 z-50 ${
           open ? "left-0" : "-left-full"
         }  w-full h-screen bg-black transition-all bg-opacity-60`}
       >
