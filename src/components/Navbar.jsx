@@ -4,8 +4,9 @@ import whatsApp from "../images/whatsapp.png";
 import logo from "../images/logo.png";
 import menu from "../images/menu.png";
 import close from "../images/close.png";
+import gsap from "gsap";
 
-const Navbar = () => {
+const Navbar = ({ setNavAnimation }) => {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     if (open) {
@@ -13,32 +14,55 @@ const Navbar = () => {
     } else {
       document.body.style.overflow = "auto";
     }
-  });
+    const screenWidth = window.innerWidth;
+    const tl = gsap.timeline({ onComplete: () => setNavAnimation(true) });
+    if (screenWidth < 500) {
+      tl.to(".logo", { y: 0, ease: "power4.out", duration: 2, delay: 1 });
+    } else {
+      tl.to(".logo", { y: 0, ease: "power4.out", duration: 2, delay: 1 })
+        .to(".link", {
+          y: 0,
+          opacity: 1,
+          ease: "circ.inOut",
+          stagger: 0.2,
+        })
+        .to(".social", {
+          x: 0,
+          opacity: 1,
+          ease: "circ.inOut",
+          stagger: 0.2,
+        });
+    }
+  }, [open, setNavAnimation]);
   return (
     <div className="px-5">
       <div className="w-5/6 max-md:w-full m-auto h-24 flex justify-between items-center ">
-        <img src={logo} alt="" className="w-52" />
+        <img src={logo} alt="" className="w-52 logo -translate-y-28 " />
         <div className="flex items-center gap-5 max-md:hidden">
           <div className="flex justify-start items-center gap-5">
-            <a href="" className="link">
+            <a href="" className="link opacity-0 -translate-y-8">
               Home
             </a>
-            <a href="" className="link">
+            <a href="" className="link opacity-0 -translate-y-8">
               About Us
             </a>
-            <a href="" className="link">
+            <a href="" className="link opacity-0 -translate-y-8">
               Products
             </a>
-            <a href="" className="link">
+            <a href="" className="link opacity-0 -translate-y-8">
               Capabilities
             </a>
-            <a href="" className="link">
+            <a href="" className="link opacity-0 -translate-y-8">
               Our Partners
             </a>
-            <a href="" className="link">
+            <a href="" className="link opacity-0 -translate-y-8">
               Call Us
             </a>
-            <a href="" className="link" style={{ fontFamily: "cairo" }}>
+            <a
+              href=""
+              className="link opacity-0"
+              style={{ fontFamily: "cairo" }}
+            >
               العربية
             </a>
           </div>
@@ -47,13 +71,13 @@ const Navbar = () => {
               href="https://www.facebook.com/handskilled.eg"
               target="_blank"
               rel="noreferrer"
-              className="hover:scale-110 transition-all"
+              className="hover:scale-110 transition-all social opacity-0 -translate-x-3"
             >
               <img src={fb} alt="" className="w-4 cursor-pointer" />
             </a>
             <a
               href="https://wa.me/1157416797"
-              className="hover:scale-110 transition-all"
+              className="hover:scale-110 transition-all social opacity-0 -translate-x-3"
               target="_blank"
               rel="noreferrer"
             >
