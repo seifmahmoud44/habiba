@@ -17,13 +17,25 @@ const Navbar = ({ setNavAnimation }) => {
     const screenWidth = window.innerWidth;
     const tl = gsap.timeline({ onComplete: () => setNavAnimation(true) });
     if (screenWidth < 500) {
-      tl.to(".logo", { y: 0, ease: "power4.out", duration: 2, delay: 1 });
+      tl.from(".logo", {
+        y: -500,
+        opacity: 0,
+        ease: "power4.out",
+        duration: 0.5,
+        delay: 0.5,
+      });
     } else {
-      tl.to(".logo", { y: 0, ease: "power4.out", duration: 2, delay: 1 })
+      tl.from(".logo", {
+        y: -500,
+        opacity: 0,
+        ease: "power4.out",
+        duration: 0.5,
+        delay: 0.5,
+      })
         .to(".link", {
           y: 0,
           opacity: 1,
-          ease: "circ.inOut",
+          ease: "power4.out",
           stagger: 0.2,
         })
         .to(".social", {
@@ -37,7 +49,7 @@ const Navbar = ({ setNavAnimation }) => {
   return (
     <div className="px-5">
       <div className="w-5/6 max-md:w-full m-auto h-24 flex justify-between items-center ">
-        <img src={logo} alt="" className="w-52 logo -translate-y-28 " />
+        <img src={logo} alt="" className="w-52 logo translate-y-0 opacity-1 " />
         <div className="flex items-center gap-5 max-md:hidden">
           <div className="flex justify-start items-center gap-5">
             <a href="" className="link opacity-0 -translate-y-8">

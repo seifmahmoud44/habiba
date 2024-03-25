@@ -143,3 +143,23 @@
 .swiper-container img {
   aspect-ratio: 4/3;
 }
+.input-container input:focus,
+.input-container input:valid,
+.input-container textarea:focus,
+.input-container textarea:valid {
+  border: 1px solid #e52421;
+}
+.input-container input:focus + label,
+.input-container input:valid + label {
+  top: -12px;
+  padding: 1px 5px;
+}
+.input-container textarea:focus + label,
+.input-container textarea:valid + label {
+  top: -12px;
+  padding: 1px 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
