@@ -11,21 +11,23 @@ const Home = () => {
       x: 0,
       ease: "power3.out",
       stagger: 0.2,
-    }).to(".img", { x: 0, ease: "power3.out", duration: 2 });
+    }).to(".img", { x: 0, ease: "power3.out", duration: 2 }, "<");
   }, []);
   return (
     <div className=" h-[calc(100vh-100px)]  relative" id="home">
       <div className="w-5/6 m-auto h-full flex justify-center items-center">
-        <div className="bg-[#FF8A8A] max-w-[500px] h-full py-16 px-7 flex flex-col gap-10 max-md:gap-5 max-md:w-full max-md:justify-center">
+        <div className="bg-[#FF8A8A] max-w-[500px] h-full py-16 px-7 flex flex-col gap-10 max-md:gap-5 max-md:w-full max-md:justify-center overflow-hidden">
           <div className="hidden max-md:block">
-            <ReactPlayer
-              url={vid}
-              loop
-              playing
-              muted
-              width={"100%"}
-              height={"100%"}
-            />
+            <div className="img -translate-x-[600px]">
+              <ReactPlayer
+                url={vid}
+                loop
+                playing
+                muted
+                width={"100%"}
+                height={"100%"}
+              />
+            </div>
           </div>
 
           <h1 className="text-white text-5xl font-bold max-md:text-[40px] max-md:text-nowrap text -translate-x-[600px] overflow-hidden">
@@ -43,14 +45,16 @@ const Home = () => {
         </div>
         <div className="w-full flex justify-center items-center h-full max-md:hidden ">
           <div className="overflow-hidden">
-            <ReactPlayer
-              url={vid}
-              loop
-              playing
-              muted
-              width={"100%"}
-              height={"100%"}
-            />
+            <div className="img -translate-x-[900px]">
+              <ReactPlayer
+                url={vid}
+                loop
+                playing
+                muted
+                width={"100%"}
+                height={"100%"}
+              />
+            </div>
           </div>
         </div>
       </div>

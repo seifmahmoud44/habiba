@@ -45,7 +45,7 @@ const Navbar = ({ setNavAnimation }) => {
           stagger: 0.2,
         });
     }
-  }, [open, setNavAnimation]);
+  }, [setNavAnimation]);
   return (
     <div className="px-5">
       <div className="w-5/6 max-md:w-full m-auto h-24 flex justify-between items-center ">
