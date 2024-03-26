@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import vid from "../images/Seif.mp4";
+import vid from "../images/vid.mp4";
 import gsap from "gsap";
 import ReactPlayer from "react-player";
 
@@ -18,14 +18,15 @@ const Home = () => {
       <div className="w-5/6 m-auto h-full flex justify-center items-center">
         <div className="bg-[#FF8A8A] max-w-[500px] h-full py-16 px-7 flex flex-col gap-10 max-md:gap-5 max-md:w-full max-md:justify-center overflow-hidden">
           <div className="hidden max-md:block">
-            <div className="img -translate-x-[600px]">
+            <div className="img-tow -translate-x-[600px]  hidden ">
               <ReactPlayer
+                style={{ transform: "scale(1.2)" }}
                 url={vid}
                 loop
                 playing
                 muted
-                width={"100%"}
-                height={"100%"}
+                width="900px"
+                height="700px"
               />
             </div>
           </div>

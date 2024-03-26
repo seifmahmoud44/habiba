@@ -11,7 +11,8 @@ import logo5 from "../images/logo5.png";
 import "swiper/css";
 const Partners = () => {
   return (
-    <div className="w-5/6 m-auto max-md:w-full px-5" id="partners">
+    <div className="w-5/6 m-auto max-md:w-full px-5 relative" id="partners">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[40%] w-[300px] h-[50%] bg-[#FF6666] max-md:-translate-y-[35%]"></div>
       <Title title={"Our Partners"} />
       <Swiper
         modules={[Autoplay]}
@@ -34,39 +35,49 @@ const Partners = () => {
         className="mySwiper w-full"
       >
         <SwiperSlide>
-          <img
-            src={logo1}
-            alt=""
-            className="w-full aspect-2/1 object-contain scale-75"
-          />
+          <div className="bg-[#FFE6E6] scale-50">
+            <img
+              src={logo1}
+              alt=""
+              className="w-full aspect-2/1 object-contain scale-50"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={logo2}
-            alt=""
-            className="w-full aspect-2/1 object-contain scale-75"
-          />
+          <div className="bg-[#FFE6E6] scale-50">
+            <img
+              src={logo2}
+              alt=""
+              className="w-full aspect-2/1 object-contain scale-50"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={logo3}
-            alt=""
-            className="w-full aspect-2/1 object-contain scale-75 "
-          />
+          <div className="bg-[#FFE6E6] scale-50">
+            <img
+              src={logo3}
+              alt=""
+              className="w-full aspect-2/1 object-contain scale-50"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={logo4}
-            alt=""
-            className="w-full aspect-2/1 object-contain scale-75"
-          />
+          <div className="bg-[#FFE6E6] scale-50">
+            <img
+              src={logo4}
+              alt=""
+              className="w-full aspect-2/1 object-contain scale-50"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={logo5}
-            alt=""
-            className="w-full aspect-2/1 object-contain md:scale-75"
-          />
+          <div className="bg-[#FFE6E6] scale-50">
+            <img
+              src={logo5}
+              alt=""
+              className="w-full aspect-2/1 object-contain scale-50"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

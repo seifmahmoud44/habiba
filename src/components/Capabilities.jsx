@@ -12,13 +12,13 @@ const Capabilities = () => {
         <img
           src={col2}
           alt=""
-          className="h-[400px] max-md:w-full  w-1/2 object-cover max-md:h-1/2 max-md:hidden"
+          className="h-[400px] max-md:w-full  w-1/2 object-cover max-md:h-1/2 max-md:hidden -translate-y-24"
         />
 
         <img
           src={col1}
           alt=""
-          className="w-1/2 max-md:w-full  max-md:-translate-y-20"
+          className="w-1/2 max-md:w-full  max-md:-translate-y-20 -translate-y-20"
         />
       </div>
     </div>
