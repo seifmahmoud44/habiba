@@ -16,7 +16,7 @@ const Products = () => {
   const [controlledSwiper, setControlledSwiper] = useState(null);
 
   return (
-    <div className="my-10 h-[80vh]">
+    <div className="my-10 h-[80vh]" id="products">
       <Title title={"Products"} />
       <div className="relative h-full w-5/6 m-auto max-md:-translate-y-20">
         <div className=" max-md:hidden  -z-10 absolute right-0 top-1/2 -translate-y-1/2 h-[400px] w-2/3 bg-[#FF6666]">
@@ -108,50 +108,50 @@ const Products = () => {
                 modules={[Autoplay, Controller]}
               >
                 <SwiperSlide className="">
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     Model
                   </h1>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     M
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     Model
                   </h1>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     R
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     Model
                   </h1>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     G
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     Model
                   </h1>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     C
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     Model
                   </h1>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     N1
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     Model
                   </h1>
-                  <h1 className="text-[#FF0000] text-5xl max-md:text-3xl font-bold text-center ">
+                  <h1 className="text-[#FF0000] text-4xl max-md:text-3xl font-bold text-center ">
                     N3
                   </h1>
                 </SwiperSlide>

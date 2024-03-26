@@ -36,7 +36,7 @@ const Navbar = ({ setNavAnimation }) => {
           y: 0,
           opacity: 1,
           ease: "power4.out",
-          stagger: 0.2,
+          stagger: 0.1,
         })
         .to(".social", {
           x: 0,
@@ -52,30 +52,21 @@ const Navbar = ({ setNavAnimation }) => {
         <img src={logo} alt="" className="w-52 logo translate-y-0 opacity-1 " />
         <div className="flex items-center gap-5 max-md:hidden">
           <div className="flex justify-start items-center gap-5">
-            <a href="" className="link opacity-0 -translate-y-8">
+            <a href="#home" className="link opacity-0 -translate-y-8">
               Home
             </a>
-            <a href="" className="link opacity-0 -translate-y-8">
-              About Us
-            </a>
-            <a href="" className="link opacity-0 -translate-y-8">
+
+            <a href="#products" className="link opacity-0 -translate-y-8">
               Products
             </a>
-            <a href="" className="link opacity-0 -translate-y-8">
+            <a href="#capabilities" className="link opacity-0 -translate-y-8">
               Capabilities
             </a>
-            <a href="" className="link opacity-0 -translate-y-8">
+            <a href="#partners" className="link opacity-0 -translate-y-8">
               Our Partners
             </a>
-            <a href="" className="link opacity-0 -translate-y-8">
+            <a href="#contact" className="link opacity-0 -translate-y-8">
               Call Us
-            </a>
-            <a
-              href=""
-              className="link opacity-0"
-              style={{ fontFamily: "cairo" }}
-            >
-              العربية
             </a>
           </div>
           <div className="flex justify-center items-center gap-3">
@@ -115,49 +106,42 @@ const Navbar = ({ setNavAnimation }) => {
           alt=""
           className="absolute top-8 right-8"
         />
-        <div className="flex flex-col justify-center items-start gap-5 h-full ">
+        <div className="flex flex-col justify-center items-start gap-5 h-full px-9">
           <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
+            onClick={() => setOpen(false)}
+            href="#home"
+            className=" block w-full text-2xl  hover:pl-4   transition-all text-white "
           >
             Home
           </a>
+
           <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
-          >
-            About Us
-          </a>
-          <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
+            onClick={() => setOpen(false)}
+            href="#products"
+            className=" text-2xl  hover:pl-4 hover:border-b-2 border-white  transition-all text-white "
           >
             Products
           </a>
           <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
+            onClick={() => setOpen(false)}
+            href="#capabilities"
+            className=" text-2xl  hover:pl-4 hover:border-b-2 border-white  transition-all text-white "
           >
             Capabilities
           </a>
           <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
+            onClick={() => setOpen(false)}
+            href="#partners"
+            className=" text-2xl  hover:pl-4 hover:border-b-2 border-white  transition-all text-white "
           >
             Our Partners
           </a>
           <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
+            onClick={() => setOpen(false)}
+            href="#contact"
+            className=" text-2xl  hover:pl-4 hover:border-b-2 border-white  transition-all text-white "
           >
             Call Us
-          </a>
-          <a
-            href=""
-            className=" text-4xl hover:pl-4 transition-all text-[#e52421] "
-            style={{ fontFamily: "cairo" }}
-          >
-            العربية
           </a>
         </div>
       </div>
